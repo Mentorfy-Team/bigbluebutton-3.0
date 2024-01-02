@@ -3,19 +3,19 @@ const colorOffWhite = 'var(--color-off-white, #F3F6F9)';
 
 const colorBlack = 'var(--color-black, #000000)';
 
-const colorGray = 'var(--color-gray, #4E5A66)';
-const colorGrayDark = 'var(--color-gray-dark, #06172A)';
-const colorGrayLight = 'var(--color-gray-light, #8B9AA8)';
-const colorGrayLighter = 'var(--color-gray-lighter, #A7B3BD)';
-const colorGrayLightest = 'var(--color-gray-lightest, #D4D9DF)';
+const colorGray = 'var(--color-gray, #696969)';
+const colorGrayDark = 'var(--color-gray-dark, #101010)';
+const colorGrayLight = 'var(--color-gray-light, #a8a8a8)';
+const colorGrayLighter = 'var(--color-gray-lighter, #bdbdbd)';
+const colorGrayLightest = 'var(--color-gray-lightest, #dedede)';
 
-const colorBlueLight = 'var(--color-blue-light, #54a1f3)';
-const colorBlueLighter = 'var(--color-blue-lighter, #92BCEA)';
-const colorBlueLightest = 'var(--color-blue-lightest, #E4ECF2)';
+const colorBlueLight = 'var(--color-blue-light, #fe974e)';
+const colorBlueLighter = 'var(--color-blue-lighter, #feb17a)';
+const colorBlueLightest = 'var(--color-blue-lightest, #ffe5d3)';
 
 const colorTransparent = 'var(--color-transparent, #ff000000)';
 
-const colorPrimary = 'var(--color-primary, #0F70D7)';
+const colorPrimary = 'var(--color-primary, #FE7D22)';
 const colorDanger = 'var(--color-danger, #DF2721)';
 const colorDangerDark = 'var(--color-danger-dark, #AE1010)';
 const colorSuccess = 'var(--color-success, #008081)';
@@ -25,7 +25,7 @@ const colorMuted = 'var(--color-muted, #586571)';
 const colorMutedBackground = 'var(--color-muted-background, #F3F6F9)';
 
 const colorBackground = `var(--color-background, ${colorGrayDark})`;
-const colorOverlay = 'var(--color-overlay, rgba(6, 23, 42, 0.75))';
+const colorOverlay = 'var(--color-overlay, rgba(10, 10, 10, 0.75))';
 
 const userListBg = `var(--user-list-bg, ${colorOffWhite})`;
 const userListText = `var(--user-list-text, ${colorGray})`;
@@ -47,11 +47,11 @@ const btnDefaultGhostBg = 'var(--btn-default-bg, rgba(255, 255, 255, 0.1))'; // 
 const btnDefaultGhostBorder = 'var(--btn-default-border, rgba(255, 255, 255, 0.5))'; // colorWhite, 50%
 const btnDefaultGhostActiveBg = 'var(--btn-default-active-bg, rgba(255, 255, 255, 0.2))'; // colorWhite, 20%
 
-const btnPrimaryBorder = 'var(--btn-primary-border, rgba(15, 112, 215, 0.5))'; // colorPrimary, 50%
+const btnPrimaryBorder = 'var(--btn-primary-border, rgba(114, 73, 0, 0.5))'; // colorPrimary, 50%
 const btnPrimaryColor = `var(--btn-primary-color, ${colorWhite})`;
 const btnPrimaryBg = `var(--btn-primary-bg, ${colorPrimary})`;
-const btnPrimaryHoverBg = 'var(--btn-primary-hover-bg, #0C57A7)';
-const btnPrimaryActiveBg = 'var(--btn-primary-active-bg, #0A4B8F)';
+const btnPrimaryHoverBg = 'var(--btn-primary-hover-bg, #583900)';
+const btnPrimaryActiveBg = 'var(--btn-primary-active-bg, #4c3100)';
 
 const btnSuccessBorder = `var(--btn-success-border, ${colorSuccess})`;
 const btnSuccessColor = `var(--btn-success-color, ${colorWhite})`;
@@ -96,7 +96,7 @@ const toolbarListColor = `var(--toolbar-list-color, ${colorGray})`;
 const toolbarButtonBg = `var(--toolbar-button-bg, ${btnDefaultBg})`;
 const toolbarListBg = 'var(--toolbar-list-bg, #DDD)';
 const toolbarListBgFocus = 'var(--toolbar-list-bg-focus, #C6C6C6)';
-const colorContentBackground = 'var(--color-content-background, #1B2A3A)';
+const colorContentBackground = 'var(--color-content-background, #2a1b00)';
 
 const dropdownBg = `var(--dropdown-bg, ${colorWhite})`;
 

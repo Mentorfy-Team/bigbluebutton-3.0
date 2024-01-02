@@ -45,7 +45,7 @@ const PresentationToolbarContainer = (props) => {
     });
   };
 
-  if (userIsPresenter && !layoutSwapped) {
+  if (userIsPresenter && layoutSwapped) {
     // Only show controls if user is presenter and layout isn't swapped
 
     const pluginProvidedPresentationToolbarItems = pluginsExtensibleAreasAggregatedState

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { throttle } from '/imports/utils/throttle';
-import { 
+import {
   layoutDispatch,
   layoutSelect,
   layoutSelectInput,

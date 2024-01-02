@@ -204,7 +204,7 @@ const WhiteboardContainer = (props) => {
     const owner = shapes[id]?.meta?.createdBy;
     const isBackgroundShape = id?.includes(':BG-');
     const isPollsResult = shapes[id]?.id?.includes('poll-result');
-    const hasAccess = (!isBackgroundShape && !isPollsResult) 
+    const hasAccess = (!isBackgroundShape && !isPollsResult)
       && ((owner && owner === currentUser?.userId) || (isPresenter) || (isModerator)) || !shapes[id];
 
     return hasAccess;
@@ -242,7 +242,7 @@ const WhiteboardContainer = (props) => {
         notifyNotAllowedChange,
         notifyShapeNumberExceeded,
         whiteboardToolbarAutoHide:
-      SettingsService?.application?.whiteboardToolbarAutoHide,
+          SettingsService?.application?.whiteboardToolbarAutoHide,
         animations: SettingsService?.application?.animations,
         toggleToolsAnimations,
         isIphone,

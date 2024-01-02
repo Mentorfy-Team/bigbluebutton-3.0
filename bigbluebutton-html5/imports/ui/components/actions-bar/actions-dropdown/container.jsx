@@ -18,7 +18,7 @@ const ActionsDropdownContainer = (props) => {
   const { width: browserWidth } = layoutSelectInput((i) => i.browser);
   const isMobile = browserWidth <= SMALL_VIEWPORT_BREAKPOINT;
   const layoutContextDispatch = layoutDispatch();
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = layoutSelect((i) => i.isRTL);;
   const { pluginsExtensibleAreasAggregatedState } = useContext(PluginsContext);
   let actionButtonDropdownItems = [];
   if (pluginsExtensibleAreasAggregatedState.actionButtonDropdownItems) {

@@ -322,7 +322,23 @@ class NavBar extends Component {
         }
       >
         <Styled.Top>
-          <Styled.Left>
+          <Styled.Right>
+            {ConnectionStatusService.isEnabled() ? <ConnectionStatusButton /> : null}
+            {ConnectionStatusService.isEnabled() ? <ConnectionStatus /> : null}
+            {renderPluginItems(leftPluginItems)}
+          </Styled.Right>
+          <Styled.Center>
+            <Styled.PresentationTitle data-test="presentationTitle">
+              {presentationTitle}
+            </Styled.PresentationTitle>
+            <RecordingIndicator
+              amIModerator={amIModerator}
+              currentUserId={currentUserId}
+            />
+            {renderPluginItems(centerPluginItems)}
+          </Styled.Center>
+          <Styled.Right>
+            {renderPluginItems(rightPluginItems)}
             {shouldShowNavBarToggleButton && isExpanded && document.dir === 'ltr'
               && <Styled.ArrowLeft iconName="left_arrow" />}
             {shouldShowNavBarToggleButton && !isExpanded && document.dir === 'rtl'
@@ -349,22 +365,6 @@ class NavBar extends Component {
               && <Styled.ArrowRight iconName="right_arrow" />}
             {shouldShowNavBarToggleButton && isExpanded && document.dir === 'rtl'
               && <Styled.ArrowRight iconName="right_arrow" />}
-            {renderPluginItems(leftPluginItems)}
-          </Styled.Left>
-          <Styled.Center>
-            <Styled.PresentationTitle data-test="presentationTitle">
-              {presentationTitle}
-            </Styled.PresentationTitle>
-            <RecordingIndicator
-              amIModerator={amIModerator}
-              currentUserId={currentUserId}
-            />
-            {renderPluginItems(centerPluginItems)}
-          </Styled.Center>
-          <Styled.Right>
-            {renderPluginItems(rightPluginItems)}
-            {ConnectionStatusService.isEnabled() ? <ConnectionStatusButton /> : null}
-            {ConnectionStatusService.isEnabled() ? <ConnectionStatus /> : null}
             <OptionsDropdownContainer amIModerator={amIModerator} />
           </Styled.Right>
         </Styled.Top>

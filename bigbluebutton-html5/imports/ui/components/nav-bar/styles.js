@@ -39,7 +39,7 @@ const ArrowLeft = styled(Icon)`
   position: absolute;
   font-size: 40%;
   color: ${colorWhite};
-  left: .25rem;
+  left: .15rem;
   @media ${smallOnly} {
     display: none;
   }
@@ -49,7 +49,7 @@ const ArrowRight = styled(Icon)`
   position: absolute;
   font-size: 40%;
   color: ${colorWhite};
-  right: .0125rem;
+  right: 2.4rem;
   @media ${smallOnly} {
     display: none;
   }
@@ -108,6 +108,7 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   flex: 0;
+  position: relative;
 `;
 
 const Bottom = styled.div`
