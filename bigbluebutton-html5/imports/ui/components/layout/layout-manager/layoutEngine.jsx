@@ -31,7 +31,7 @@ const LayoutEngine = ({ layoutType }) => {
   const sharedNotesInput = layoutSelectInput((i) => i.sharedNotes);
 
   const fullscreen = layoutSelect((i) => i.fullscreen);
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   const fontSize = layoutSelect((i) => i.fontSize);
   const deviceType = layoutSelect((i) => i.deviceType);
 

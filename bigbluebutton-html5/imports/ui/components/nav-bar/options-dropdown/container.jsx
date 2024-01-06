@@ -21,7 +21,7 @@ const noIOSFullscreen = !!(((isSafari && !isValidSafariVersion) || isIphone));
 const OptionsDropdownContainer = (props) => {
   const { width: browserWidth } = layoutSelectInput((i) => i.browser);
   const isMobile = browserWidth <= SMALL_VIEWPORT_BREAKPOINT;
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   const { pluginsExtensibleAreasAggregatedState } = useContext(PluginsContext);
   let optionsDropdownItems = [];
   if (pluginsExtensibleAreasAggregatedState.optionsDropdownItems) {

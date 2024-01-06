@@ -151,10 +151,10 @@ const WebcamComponent = ({
       ? ((cameraDock.height - cameraSize.height) / 2)
       : 0,
   };
-
-  if (isRTL) {
+  
+  //if (true) {//!layoutSelect((i) => i.isRTL)
     draggableOffset.left = draggableOffset.left * -1;
-  }
+  //}
   const isIphone = !!(navigator.userAgent.match(/iPhone/i));
 
   const mobileWidth = `${isDragging ? cameraSize.width : cameraDock.width}pt`;
@@ -172,6 +172,7 @@ const WebcamComponent = ({
           || cameraDock.position === CAMERADOCK_POSITION.CONTENT_RIGHT}
       >
         <Draggable
+          id='testDraggableID'
           handle="video"
           bounds="html"
           onStart={handleWebcamDragStart}
@@ -187,7 +188,7 @@ const WebcamComponent = ({
           disabled={!cameraDock.isDraggable || isResizing || isFullscreen}
           position={
             {
-              x: cameraDock.left - cameraDock.right + draggableOffset.left,
+              x: 0,// x: cameraDock.left - cameraDock.right + draggableOffset.left,
               y: cameraDock.top + draggableOffset.top,
             }
           }

@@ -8,16 +8,16 @@ public:
     # audio
     autoJoin: true
     # Disables the listen only option in audio modal.
-    listenOnlyMode: true
+    listenOnlyMode: false
     forceListenOnly: false
     # Skips the echo test when connecting with microphone.
-    skipCheck: false
+    skipCheck: true
     # Skips the echo test when connecting with microphone right after user
     # joins the room the first time. Subsequent joins to microphone won't
     # have echo test skipped, for example if user leaves and joins the mic
     # again or reloading page and joining mic again.
     # This setting won't have effect if skipCheck = true
-    skipCheckOnJoin: false
+    skipCheckOnJoin: true
     #
     # Allow users to change microphone/speaker dynamically
     # The device is changed immediately, without the need to rejoin
@@ -58,7 +58,7 @@ public:
     askForFeedbackOnLogout: false
     # the default logoutUrl matches window.location.origin i.e. bigbluebutton.org for demo.bigbluebutton.org
     # in some cases we want only custom logoutUrl to be used when provided on meeting create. Default value: true
-    askForConfirmationOnLeave: true
+    askForConfirmationOnLeave: false
     wakeLock: 
       enabled: true
     allowDefaultLogoutUrl: true
@@ -115,9 +115,9 @@ public:
         # browserLanguage: to set browser language
         # [en-US, es-ES, pt-BR,...]: to set a specific locale
         # disabled: to set disabled
-        locale: disabled
+        locale: pt-BR
     mutedAlert:
-      enabled: true
+      enabled: false
       interval: 200
       threshold: -50
       duration: 4000
@@ -436,10 +436,10 @@ public:
     # media server adapter should be used for webcams.
     # Default is undefined, which means the default setting in bbb-webrtc-sfu
     # prevails (videoMediaServer).
-    #videoMediaServer: Kurento
+    #videoMediaServer: Kurento #Alterado #videoMediaServer: Kurento
     autoShareWebcam: false
-    skipVideoPreview: false
-    skipVideoPreviewOnFirstJoin: false
+    skipVideoPreview: true
+    skipVideoPreviewOnFirstJoin: true
     # cameraSortingModes.paginationSorting: sorting mode to be applied when pagination is active
     # cameraSortingModes.defaultSorting: sorting mode when pagination is not active (full mesh)
     # Current implemented modes are:
@@ -711,7 +711,7 @@ public:
     # Number of reconnection attempts of the signaling websocket, before
     # showing to the user there's an audio error.
     audioReconnectionAttempts: 3
-    sipjsHackViaWs: true
+    sipjsHackViaWs: false
     # sipjsAllowMdns: whether mDNS candidates should be allowed in local SDPs.
     # Default is false since FreeSWITCH doesn't resolve mDNS by default.
     sipjsAllowMdns: false

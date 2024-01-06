@@ -24,7 +24,7 @@ const WebcamContainer = ({
   isLayoutSwapped,
 }) => {
   const fullscreen = layoutSelect((i) => i.fullscreen);
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   const cameraDockInput = layoutSelectInput((i) => i.cameraDock);
   const focusedId = layoutSelectInput((i) => i.focusedId);
   const presentation = layoutSelectOutput((i) => i.presentation);

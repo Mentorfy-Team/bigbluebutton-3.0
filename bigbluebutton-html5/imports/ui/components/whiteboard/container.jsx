@@ -165,7 +165,7 @@ const WhiteboardContainer = (props) => {
     }
   }];
 
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   const width = layoutSelect((i) => i?.output?.presentation?.width);
   const height = layoutSelect((i) => i?.output?.presentation?.height);
   const sidebarNavigationWidth = layoutSelect(

@@ -13,7 +13,7 @@ const SmartMediaShareContainer = (props) => (
 );
 
 export default withTracker(() => {
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   return {
     isRTL,
     isMobile: isMobile(),

@@ -28,7 +28,7 @@ const VideoFocusLayout = (props) => {
 
   const input = layoutSelect((i) => i.input);
   const deviceType = layoutSelect((i) => i.deviceType);
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   const fullscreen = layoutSelect((i) => i.fullscreen);
   const fontSize = layoutSelect((i) => i.fontSize);
   const currentPanelType = layoutSelect((i) => i.currentPanelType);

@@ -12,7 +12,7 @@ const NotesDropdownContainer = ({ ...props }) => {
     presenter: user.presenter,
   }));
   const amIPresenter = currentUserData?.presenter;
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
 
   const { data: presentationData } = useSubscription(PROCESSED_PRESENTATIONS_SUBSCRIPTION);
   const presentations = presentationData?.pres_presentation || [];

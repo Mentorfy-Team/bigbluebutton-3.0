@@ -24,7 +24,7 @@ const PresentationMenuContainer = (props) => {
   const layoutContextDispatch = layoutDispatch();
   const { elementId } = props;
   const isFullscreen = currentElement === elementId;
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
   const { pluginsExtensibleAreasAggregatedState } = useContext(PluginsContext);
   let presentationDropdownItems = [];
   if (pluginsExtensibleAreasAggregatedState.presentationDropdownItems) {

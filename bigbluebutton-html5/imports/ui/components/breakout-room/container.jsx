@@ -20,7 +20,7 @@ const BreakoutContainer = (props) => {
   }));
   const amIPresenter = currentUserData?.presenter;
   const amIModerator = currentUserData?.isModerator;
-  const isRTL = layoutSelect((i) => i.isRTL);
+  const isRTL = true;//!layoutSelect((i) => i.isRTL);
 
   return <BreakoutComponent
     amIPresenter={amIPresenter}

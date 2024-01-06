@@ -149,7 +149,7 @@ class IntlStartup extends Component {
                   Settings.application.isRTL = true;
                 } else {
                   document.body.parentNode.setAttribute('dir', 'ltr');
-                  Settings.application.isRTL = true;
+                  Settings.application.isRTL = false;
                 }
                 Session.set('isLargeFont', LARGE_FONT_LANGUAGES.includes(dasherizedLocale.substring(0, 2)));
                 window.dispatchEvent(new Event('localeChanged'));

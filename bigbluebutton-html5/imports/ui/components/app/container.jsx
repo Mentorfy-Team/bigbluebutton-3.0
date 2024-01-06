@@ -331,7 +331,7 @@ export default withTracker(() => {
     UserInfo,
     notify,
     isPhone: deviceInfo.isPhone,
-    isRTL: document.documentElement.getAttribute('dir') === 'rtl',
+    isRTL: true,
     currentUserEmoji: currentUserEmoji(currentUser),
     currentUserAway: currentUser.away,
     currentUserRaiseHand: currentUser.raiseHand,
